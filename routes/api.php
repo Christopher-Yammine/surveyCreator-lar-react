@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SurveyController;
+use App\Http\Controllers\UserController;
 
 Route::controller(AuthController::class)->group(function () {
     Route::post('login', 'login');
@@ -11,7 +13,11 @@ Route::controller(AuthController::class)->group(function () {
     Route::post('logout', 'logout');
     Route::post('refresh', 'refresh');
 });
-Route::post('/addSurvey',[AdminController::class,'addSurvey'])->name("addSurvey");
+Route::post('/addSurvey', [AdminController::class, 'addSurvey'])->name("addSurvey");
+Route::post('/addRest', [AdminController::class, 'addRest'])->name("addRest");
+Route::post('/addType', [SurveyController::class, 'addType'])->name("addType");
+Route::get('/showTypes', [SurveyController::class, 'showTypes'])->name("showTypes");
+Route::get('/getSurveys', [UserController::class, 'getSurveys'])->name("getSurveys");
 /*
 |--------------------------------------------------------------------------
 | API Routes
