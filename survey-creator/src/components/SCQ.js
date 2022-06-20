@@ -10,16 +10,26 @@ const SCQ = () => {
                         type='text'
                         placeholder='Enter question here'
                     ></input>
-                    <div style={{ display: "inline-block" }}>
-                        <label>
-                            <input type="radio" value="1" name='yesno' />
-                            scq
-                        </label>
-                        <label>
-                            <input type="radio" value="2" name='yesno' />
-                            cqqwdwd
-                        </label>
-                    </div>
+                    <label>Enter first option</label>
+                    <input
+                        type='text'
+                        placeholder='Option 1'
+                    ></input>
+                    <label>Enter second option</label>
+                    <input
+                        type='text'
+                        placeholder='Option 2'
+                    ></input>
+                    <label>Enter third option</label>
+                    <input
+                        type='text'
+                        placeholder='Option 3'
+                    ></input>
+                    <label>Enter fourth option</label>
+                    <input
+                        type='text'
+                        placeholder='Option 4'
+                    ></input>
 
                 </div>
             </form>

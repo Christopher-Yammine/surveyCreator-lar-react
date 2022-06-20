@@ -10,16 +10,16 @@ const Yesno = () => {
                         type='text'
                         placeholder='Enter question here'
                     ></input>
-                    <div style={{ display: "inline-block" }}>
-                        <label>
-                            <input type="radio" value="1" name='yesno' />
-                            YES
-                        </label>
-                        <label>
-                            <input type="radio" value="2" name='yesno' />
-                            NO
-                        </label>
-                    </div>
+                    <label>Enter first option</label>
+                    <input
+                        type='text'
+                        placeholder='Option 1'
+                    ></input>
+                    <label>Enter second option</label>
+                    <input
+                        type='text'
+                        placeholder='Option 2'
+                    ></input>
 
                 </div>
             </form>
