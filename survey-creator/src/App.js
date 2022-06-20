@@ -3,6 +3,8 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Login from './components/Login';
+import Addsurvey from './components/Addsurvey';
+import Displaysurvey from './components/Displaysurvey.js';
 const { default: axios } = require("axios");
 function App() {
   const [showLogin, setshowLogin] = useState(true);
@@ -23,12 +25,17 @@ function App() {
       if (response.data.status === 'success' && response.data.user.id === 1) {
         setshowLogin(false);
         setshowSurveysform(true);
+      } else if (response.data.status === 'success' && response.data.user.id !== 1) {
+        setshowLogin(false);
+        setshowSurveys(true);
       }
     })
   }
   return (
     <div className='container'>
       {showLogin && <Login onPressed={checkcreds} />}
+      {showSurveysform && <Addsurvey />}
+      {showSurveys && <Displaysurvey />}
     </div>
   );
 }
