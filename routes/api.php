@@ -18,6 +18,7 @@ Route::post('/addRest', [AdminController::class, 'addRest'])->name("addRest");
 Route::post('/addType', [SurveyController::class, 'addType'])->name("addType");
 Route::get('/showTypes', [SurveyController::class, 'showTypes'])->name("showTypes");
 Route::get('/getSurveys', [UserController::class, 'getSurveys'])->name("getSurveys");
+Route::post('/displaySurvey', [UserController::class, 'displaySurvey'])->name("displaySurvey");
 /*
 |--------------------------------------------------------------------------
 | API Routes
