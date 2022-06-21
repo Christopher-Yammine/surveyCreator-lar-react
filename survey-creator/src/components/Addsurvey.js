@@ -8,6 +8,7 @@ const Addsurvey = () => {
   return (
     <div>
       <Types />
+   
     </div>
 
   )

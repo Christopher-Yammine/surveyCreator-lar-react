@@ -1,6 +1,6 @@
 import React from 'react'
 
-const plaintext = () => {
+const Plaintext = () => {
     return (
         <div>
             <form className='add-form'>
@@ -17,4 +17,4 @@ const plaintext = () => {
     )
 }
 
-export default plaintext
+export default Plaintext
