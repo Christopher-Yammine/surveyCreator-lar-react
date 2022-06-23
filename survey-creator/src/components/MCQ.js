@@ -13,6 +13,7 @@ const MCQ = () => {
                 <input
                     type='text'
                     placeholder='Option 1'
+
                 ></input>
                 <label>Enter second option</label>
                 <input
